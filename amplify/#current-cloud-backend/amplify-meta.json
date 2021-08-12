@@ -1,0 +1,56 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nexttailwindauth-dev-173544-authRole",
+      "UnauthRoleArn": "arn:aws:iam::304649300979:role/amplify-nexttailwindauth-dev-173544-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::304649300979:role/amplify-nexttailwindauth-dev-173544-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-nexttailwindauth-dev-173544-deployment",
+      "UnauthRoleName": "amplify-nexttailwindauth-dev-173544-unauthRole",
+      "StackName": "amplify-nexttailwindauth-dev-173544",
+      "StackId": "arn:aws:cloudformation:us-east-1:304649300979:stack/amplify-nexttailwindauth-dev-173544/15c5c300-faec-11eb-b13c-0e0b853fd859",
+      "AmplifyAppId": "d1fiqew7iw6h2w"
+    }
+  },
+  "auth": {
+    "nexttailwindauthd1a156d2": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "loginMechanism": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-nexttailwindauth-dev-173544-deployment/amplify-cfn-templates/auth/nexttailwindauthd1a156d2-cloudformation-template.yml",
+        "logicalId": "authnexttailwindauthd1a156d2"
+      },
+      "lastPushTimeStamp": "2021-08-12T03:35:51.475Z",
+      "output": {
+        "UserPoolId": "us-east-1_ZgmNYzQv9",
+        "AppClientIDWeb": "4lhu326897rg927r44jie786lo",
+        "AppClientID": "3jlngu5gdug1n2gug85dpiqg69",
+        "HostedUIDomain": "nexttailwindauthd1a156d2-d1a156d2-dev",
+        "IdentityPoolId": "us-east-1:630d5880-dfca-48d6-9351-ba1d7a527419",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:304649300979:userpool/us-east-1_ZgmNYzQv9",
+        "IdentityPoolName": "nexttailwindauthd1a156d2_identitypool_d1a156d2__dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
+        "UserPoolName": "nexttailwindauthd1a156d2_userpool_d1a156d2"
+      },
+      "lastPushDirHash": "NRLNJojSGMqn1gHcaoTq5Bf6AgU="
+    }
+  }
+}
