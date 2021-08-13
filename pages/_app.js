@@ -1,10 +1,13 @@
 // pages/_app.js
 import "tailwindcss/tailwind.css";
 import Link from "next/link";
+import { Provider } from "react-redux";
+import { createWrapper } from "next-redux-wrapper";
+import store from "../store/store";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <Provider store={store}>
       <nav className="absolute w-full py-4 px-12 border-b border-gray-300">
         <Link href="/">
           <a>Home</a>
@@ -22,7 +25,7 @@ function MyApp({ Component, pageProps }) {
       <div>
         <Component {...pageProps} />
       </div>
-    </div>
+    </Provider>
   );
 }
 
